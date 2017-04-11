@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Comedy Pl</title>
+
+   
+<link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Poiret+One|Reem+Kufi|Pavanam|Nunito|Abel" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+
+
+
+
+
+
+
+</head>
+<body style="padding:0px; margin:0px; background-color:#000;font-family: 'Reem Kufi', sans-serif !important;
+ color:#fff; letter-spacing: 0.2em;">
+
+    <!-- #region Jssor Slider Begin -->
+    <script src="js/jssor.slider-23.1.0.min.js" type="text/javascript"></script>
+    <script src="typed.js-master/js/typed.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:900,d:2000,x:-379,e:{x:7}}],
+              [{b:-1,d:1,o:-1,sX:2,sY:2},{b:0,d:900,x:-171,y:-341,o:1,sX:-2,sY:-2},{b:900,d:1600,x:-283,o:-1,e:{x:16}}]
+            ];
+
+            var jssor_1_options = {
+              // $AutoPlay: 1,
+              // $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+
+        Typed.new("#typed", {
+            stringsElement: document.getElementById('typed-strings'),
+
+            typeSpeed: 50,
+            backSpeed: 70,
+            backDelay: 7000,
+            // fadeOut: 100,
+            // fadeOutClass: '.type-wrap',
+            // fadeOutSpeed: 100,
+            loop: null,
+            contentType: 'html', // or text
+            // defaults to null for infinite loop
+            loopCount: null,
+            callback: function(){ wrap(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        var resetElement = document.querySelector('.reset');
+        if(resetElement) {
+            resetElement.addEventListener('click', function() {
+                document.getElementById('typed-strings')._typed.reset();
+            });
+        }
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function wrap(){ console.log("Callback"); }
+
+    </script>    
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        .jssora22l.jssora22lds      (disabled)
+        .jssora22r.jssora22rds      (disabled)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 36px;
+            height: 54px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+        .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
+        .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
+
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+        .typed-fade-out{
+            opacity: 0;
+            animation: 0;
+            transition: opacity .25s;
+        }
+
+
+
+    </style>
+
+    <div style="margin:0px; letter-spacing:0.15em;text-align:left; font-size: 1.7em; opacity: 0.9; padding-bottom:2px;padding-left: 10px; padding-top: 10px; ">El Comedy Playlist</div>
+
+
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:10px;left:0px;width:1300px;height:650px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:650px;overflow:hidden;">
+            <div>               
+
+                <img src="wf.png" style="margin-left: 330px; padding-top: 50px;">
+                <p style="text-align:center; font-size:1.1em; padding-top: 20px;font-family: 'Pavanam', sans-serif;">Click on the right > to start!</p>
+                <!-- <img data-u="image" src="img/red.jpg" /> -->
+                <!-- <div style="position:absolute;top:30px;left:30px;width:480px;height:120px;z-index:0;font-size:50px;color:#ffffff;line-height:60px;">TOUCH SWIPE SLIDER</div>
+                <div style="position:absolute;top:300px;left:30px;width:480px;height:120px;z-index:0;font-size:30px;color:#ffffff;line-height:38px;">Build your slider with anything, includes image, content, text, html, photo, picture</div> -->
+                <div style="position:absolute;top:120px;left:650px;width:470px;height:220px;z-index:0;">
+                    <!-- <img style="position:absolute;top:0px;left:0px;width:470px;height:220px;z-index:0;" src="img/c-phone-horizontal.png" /> -->
+                    <div style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0; overflow:hidden;">
+                        <!-- <img data-u="caption" data-t="0" style="position:absolute;top:0px;left:0px;width:379px;height:213px;z-index:0;" src="img/c-slide-1.jpg" />
+                        <img data-u="caption" data-t="1" style="position:absolute;top:0px;left:379px;width:379px;height:213px;z-index:0;" src="img/c-slide-3.jpg" /> -->
+                    </div>
+                    <!-- <img style="position:absolute;top:4px;left:45px;width:379px;height:213px;z-index:0;" src="img/c-navigator-horizontal.png" /> -->
+                    <!-- <img data-u="caption" data-t="2" style="position:absolute;top:476px;left:454px;width:63px;height:77px;z-index:0;" src="img/hand.png" /> -->
+                </div>
+            </div>
+
+            <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3aL9qqWRm7E" frameborder="0" allowfullscreen></iframe>
+            </div> 
+
+            <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4sUEaATniCo" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/htrm98UdqJ4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/A4XAZgZUzjQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/m4OvQIGDg4I" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9EOgDzvLJzg" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mieGgqR10Gw" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+
+<!--             <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9EOgDzvLJzg" frameborder="0" allowfullscreen></iframe>
+            </div> -->
+<!--             <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7ZZWtLch1g0" frameborder="0" allowfullscreen></iframe>
+            </div>  -->           
+
+            <div>
+                
+               <!-- <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A1Uq3IOIy1CUlHUgP6vWpum" width="300" height="380" frameborder="0" allowtransparency="true" style="margin-left:500px;"></iframe> -->
+               <!-- <iframe width="560" height="315" style="margin-left:360px;"src="https://www.youtube.com/embed/gs3gxpUonSw" frameborder="0" allowfullscreen></iframe>  -->  
+               <!-- <iframe width="560" height="315" style="margin-left:370px;" src="https://www.youtube.com/embed/-aJ3l02_6L4" frameborder="0" allowfullscreen></iframe> -->
+               <!-- <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A1gLbbnyTOnx6LrCQ87c0gp" style="margin-left:570px;"width="200" height="280" frameborder="0" allowtransparency="true"></iframe> -->
+              <!--  <iframe width="560" height="315" src="https://www.youtube.com/embed/MJQE4pOgiPg" frameborder="0" allowfullscreen></iframe> -->
+              <!-- <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A74tsW4h0WDYRpfD19gc10W" style="margin-left:550px;margin-top:150px;"width="200" height="280" frameborder="0" allowtransparency="true"></iframe> -->
+
+              <!-- <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/265589728&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe> -->
+
+              <iframe style="margin-top:95px; margin-left:150px;"width="77%" height="120" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/90151784&amp;color=1a53ff&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+
+               <!-- <img src="vikvaughn.png" style=" margin-left: 125px;width: 80%; height: 75%;"> -->
+
+<!-- <audio id="player" src="Somersault.m4a"></audio>
+<div> 
+  <button onclick="document.getElementById('player').play()">Play</button> 
+  <button onclick="document.getElementById('player').pause()">Pause</button> 
+  <button onclick="document.getElementById('player').volume += 0.1">Vol+ </button> 
+  <button onclick="document.getElementById('player').volume -= 0.1">Vol- </button> 
+</div>   -->             
+
+<!-- 
+
+<audio controls style="margin-left: 500px;">
+
+  <source src="Somersault.m4a" type="audio/ogg">
+  <source src="Somersault.m4a" type="audio/mpeg">
+</audio> -->
+
+    <div class="wrap" style="text-align:center; margin-top:50px; font-size: 1.3em !important; margin-top:50px;font-family: 'Poiret One', cursive;">
+        <!-- <h1 class="h1">Typed.js</h1> -->
+
+        <div class="type-wrap" style="margin-top:5px;">
+            <div id="typed-strings">
+                <span>“Anything that gets your blood racing <br>is probably worth doing.” - xo </span>
+                <!-- <p>It <em>types</em> out sentences.</p>
+                <p>And then deletes them.</p>
+                <p>Try it out!</p> -->
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+        </div>
+
+<!--         <div class="links">
+            <a href="http://www.mattboldt.com/demos/typed-js">View original demo</a> | <a href="http://www.mattboldt.com">View mattboldt.com</a> | <a href="http://www.twitter.com/atmattb">Complain to Matt about how awful this is</a>
+        </div> -->
+        </div>
+
+               <!-- <p style="text-align:center; font-size: 1.3em !important; margin-top:50px;font-family: 'Poiret One', cursive;">Thanks for being there the last 5 years. - xo</p> --><!-- <p style="text-align:center; font-size: 1.5em !important">You're so coo</p> --><!-- <p style="text-align:center; font-size: 1.4em !important;font-family: 'Nunito', sans-serif;">xo</p> -->
+        </div> 
+
+        <div>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/N_j5tDuakKU" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        </div>
+
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+    </div>
+
+
+    <script src="jquery-3.2.0.min.js"></script>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+
+    <!-- #endregion Jssor Slider End -->
+</body>
+</html>
