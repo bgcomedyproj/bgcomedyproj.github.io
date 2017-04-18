@@ -1,71 +1,171 @@
-@import "compass/css3";
+body {
+  margin: auto;
+  padding: auto;
+/*  background-color: #000;*/
+}
 
-$vinyl-color-1: #333;
-$vinyl-color-2: #8F005C;
-$vinyl-color-3: #21BFF1;
+html { 
+  background: url(stage.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-body{
+#element {
+  position:fixed;
+  top: 0px;
+  margin: auto;
+  z-index: 1000000;
+  width: 100%;
+  font-family: 'Reem Kufi', sans-serif !important;
+  letter-spacing: 0.2em;
+}
+
+.jk {
+  margin:0 auto;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.3em;
+  padding-left:5px;
+  padding-bottom:5px;
+}
+
+.water {
+  width: 100%;
+  height: 800px;
+  margin:0 auto;
+}
+
+#intro {
+  margin: 0 auto;
+  padding-top: 0 auto;
+}
+
+.up {
+  text-align:right;
+  padding-right:10px;
+  z-index: 1000;
+  color: blue;
+  font-size: 1.5em;
+  opacity:0.9;
+}
+
+.next {
   text-align: center;
+  margin-top: 0px;
+  padding: 0 auto;
+  background-color: #000;
+  width: 100%;
+  height:50px;
+/*  opacity: 0.9;*/
 }
 
-.picture{
-  margin: 100px;
+/*.bundle {
+  width: 100%;
+  height: 110%;
+  background-color: #000;
+  padding-bottom: 50px;
 }
 
-@mixin create-vinyl($color) {
-  /**Size**/
-  width: 120px;
-  height: 120px;
-  
-  /**Animation**/
-  animation:play 15s 0s infinite;
-  transform:rotate(0deg); 
-  animation-timing-function: linear;
-  
-  /**Vinyl**/
-  box-shadow: 0 0 0 5px $color, 0 0 0 6px darken($color,10), 0 0 0 7px $color, 0 0 0 8px darken($color,10), 0 0 0 9px $color, 0 0 0 10px darken($color,10), 0 0 0 11px $color, 0 0 0 12px darken($color,10), 0 0 0 13px $color, 0 0 0 14px darken($color,10), 0 0 0 15px $color, 0 0 0 16px darken($color,10), 0 0 0 17px $color, 0 0 0 18px darken($color,10), 0 0 0 19px $color, 0 0 0 20px darken($color,10), 0 0 0 21px $color, 0 0 0 22px darken($color,10), 0 0 0 23px $color, 0 0 0 24px darken($color,5), 0 0 0 25px $color, 0 0 0 30px darken($color,10);
-  border-radius: 50%;
+.nes {
+  width: 100%;
+  height: 110%;
+  background-color: #000;
+  padding-bottom: 50px;
+  opacity:0.9;  
+}*/
+#jg {
+  width: 100%;
+  height: 675px;
+}
+#jgaffigan {
+  margin-top:1200px;
+  width: 100%;
+  height: 675px;
+  padding-top:75px;
 }
 
-@keyframes play {
-  0% {
-
-    transform:rotate(0deg);
-  }
-  100% {
-
-    transform:rotate(360deg);
-  }
+#start {
+  color:#fff; 
+  font-size:2em; 
+  margin-top:-500px;
+  margin-left: 35%;
+  text-align:center;
+  width: 500px;
+  height: 675px;
+  /*background-color: #000;*/
+  /*opacity: 0.7;*/
 }
 
-.vinyl-1{
-  @include create-vinyl($vinyl-color-1);
+a:link {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Reem Kufi', sans-serif !important;
+  letter-spacing: 0.2em;
+  font-size:1em;
 }
 
-.vinyl-2{
-  @include create-vinyl($vinyl-color-2);
+a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Reem Kufi', sans-serif !important;
+  letter-spacing: 0.2em;
+  font-size:1em;
 }
 
-.vinyl-3{
-  @include create-vinyl($vinyl-color-3);
+#bburr {
+  margin-top:1000px;
+  width: 100%;
+  height: 675px;
+  padding-top:75px;
 }
 
-
-.footer{
-  padding-top: 100px;
-  
-  .credits{
-    text-align: center;
-    color: #666;
-    
-    .link{
-      color: $vinyl-color-3;
-      text-decoration: none;
-    }
-    
-  }
-  
+#lneeson {
+  margin-top:1000px;
+  width: 100%;
+  height: 675px;
+  padding-top:75px;
 }
 
+#bobs {
+  margin-top:1000px;
+  width: 100%;
+  height: 675px;
+  padding-top:75px;
+}
 
+#louis {
+  margin-top:1000px;
+  width: 100%;
+  height: 675px;
+  padding-top:75px;
+}
 
+#jrogan {
+  margin-top:1000px;
+  width: 100%;
+  height: 675px;
+  padding-top:75px;
+}
+
+#gcarlin {
+  margin-top:1000px;
+  width: 100%;
+  height: 675px;
+  padding-top:75px; 
+}
+
+#moon {
+  margin-top:1000px;
+  width: 100%;
+  height: 675px;
+  padding-bottom: 80px;
+}
+
+#lxmas {
+  margin-top:1000px;
+  width: 100%;
+  height: 675px;
+  padding-top:75px;
+}
