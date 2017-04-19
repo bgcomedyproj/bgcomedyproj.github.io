@@ -1,62 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>El Comedy Playlist</title>
 
-    <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Poiret+One|Reem+Kufi|Pavanam|Nunito|Abel" rel="stylesheet">    
-    <!-- Latest compiled and minified CSS -->
-<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="index2.css">
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Poiret+One|Reem+Kufi|Pavanam|Nunito+Sans|Abel|Raleway|Raleway+Dots|Codystar" rel="stylesheet">
 
-<script src="jquery-3.2.0.min.js"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
-<script src="typed.js-master/js/typed.js" type="text/javascript"></script>  
+    <script src="jquery-3.2.0.min.js"></script>
+    <script src="typed.js-master/js/typed.js" type="text/javascript"></script>  
 
     <style>
-        /* jssor slider bullet navigator skin 05 css */
-        /*
-        .jssorb05 div           (normal)
-        .jssorb05 div:hover     (normal mouseover)
-        .jssorb05 .av           (active)
-        .jssorb05 .av:hover     (active mouseover)
-        .jssorb05 .dn           (mousedown)
-        */
-
-
-        /* jssor slider arrow navigator skin 22 css */
-        /*
-        .jssora22l                  (normal)
-        .jssora22r                  (normal)
-        .jssora22l:hover            (normal mouseover)
-        .jssora22r:hover            (normal mouseover)
-        .jssora22l.jssora22ldn      (mousedown)
-        .jssora22r.jssora22rdn      (mousedown)
-        .jssora22l.jssora22lds      (disabled)
-        .jssora22r.jssora22rds      (disabled)
-        */
-        .jssora22l, .jssora22r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 36px;
-            height: 54px;
-            cursor: pointer;
-            background: url('img/a22.png') center center no-repeat;
-            overflow: hidden;
-        }
-        .jssora22l { background-position: -10px -31px; }
-        .jssora22r { background-position: -70px -31px; }
-        .jssora22l:hover { background-position: -130px -31px; }
-        .jssora22r:hover { background-position: -190px -31px; }
-        .jssora22l.jssora22ldn { background-position: -250px -31px; }
-        .jssora22r.jssora22rdn { background-position: -310px -31px; }
-        .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
-        .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
-
         /* code for animated blinking cursor */
         .typed-cursor{
             opacity: 1;
@@ -103,26 +59,38 @@
 </head>
 
 <body>
-
-<div id="element">
-        <h1 class="jk">El Comedy Playlist</h1>  
-</div>
-
+    
+    <div id="element">
+        <div class="dropdown">
+          <h1 class="jk">El Comedy Playlist</h1>
+          <div class="dropdown-content">
+            <a href="#jgaffigan">1. Jim Gaffigan - Seafood</a><br>
+            <a href="#bburr">2. Bill Burr - Owning a Dog</a><br>
+            <a href="#lneeson">3. Life's Too Short Sketch</a><br>
+            <a href="#bobs">4. The Bobs</a><br>
+            <a href="#louis">5. Louis C.K. - Courage</a><br>
+            <a href="#jrogan">6. Joe Rogan - We Can Go Dumber</a><br>
+            <a href="#gcarlin">7. George Carlin - Giving Love</a><br>
+            <a href="#moon">8. Instrumentals</a><br>
+            <a href="#lxmas">9. Samsonite</a><br>
+          </div>
+        </div>
+    </div>
 
     <div class="water">
         <iframe id ="intro" src="elcm.mp4" style="width: 100%; height: 100%; border:none;" allowfullscreen></iframe>
     </div>
 
     <div id="first">
-        <p id="start"   ><a href="#jgaffigan" id="jg">Click to Start the Show</a></p>
+        <p id="start"><a href="#jgaffigan" id="jg">Click to Start the Show</a></p>
     </div>
 
     <div id="jgaffigan">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3aL9qqWRm7E" frameborder="0" allowfullscreen></iframe>
     </div>
             <div class="next">
-                <a href="#lxmas">|<</a>
-                <a href="#bburr">>|</a>
+                <a href="#lxmas" style="padding-right:10px;">|<</a>
+                <a href="#bburr" style="padding-left:10px;">>|</a>
             </div>
 
 
@@ -130,49 +98,49 @@
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4sUEaATniCo" frameborder="0" allowfullscreen></iframe>
     </div>
         <div class="next">
-            <a href="#jgaffigan">|<</a>
-            <a href="#lneeson">>|</a>
+            <a href="#jgaffigan" style="padding-right:10px;">|<</a>
+            <a href="#lneeson" style="padding-left:10px;">>|</a>
         </div> 
 
     <div id="lneeson">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/htrm98UdqJ4" frameborder="0" allowfullscreen></iframe>
     </div>
         <div class="next">
-            <a href="#bburr">|<</a>
-            <a href="#bobs">>|</a>
+            <a href="#bburr" style="padding-right:10px;">|<</a>
+            <a href="#bobs" style="padding-left:10px;">>|</a>
         </div>
 
     <div id="bobs"> 
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/m4OvQIGDg4I" frameborder="0" allowfullscreen></iframe>  
     </div>
      <div class="next">
-            <a href="#lneeson">|<</a>       
-            <a href="#louis">>|</a>
+            <a href="#lneeson" style="padding-right:10px;">|<</a>       
+            <a href="#louis" style="padding-left:10px;">>|</a>
         </div>
 
      <div id="louis">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/A4XAZgZUzjQ" frameborder="0" allowfullscreen></iframe>
      </div>
       <div class="next">
-        <a href="#bobs">|<</a>
-            <a href="#jrogan">>|</a>
+        <a href="#bobs"style="padding-right:10px;">|<</a>
+            <a href="#jrogan" style="padding-left:10px;">>|</a>
         </div>
 
     <div id="jrogan">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9EOgDzvLJzg" frameborder="0" allowfullscreen></iframe>
     </div>     
       <div class="next">
-        <a href="#louis">|<</a>
-            <a href="#gcarlin">>|</a>
+        <a href="#louis" style="padding-right:10px;">|<</a>
+        <a href="#gcarlin" style="padding-left:10px;">>|</a>
         </div> 
 
     <div id="gcarlin">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/mieGgqR10Gw" frameborder="0" allowfullscreen></iframe>
     </div> 
       <div class="next">
-        <a href="#jrogan">|<</a>
-            <a href="#moon">>|</a>
-        </div> 
+        <a href="#jrogan"style="padding-right:10px;">|<</a>
+        <a href="#moon" style="padding-left:10px;">>|</a>
+       </div> 
 
     <div id="moon" style="background-color: #000; height:675px; opacity: 0.7;">
         <iframe style="margin-top:95px; margin-left:150px;"width="77%" height="120" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/90151784&amp;color=1a53ff&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
@@ -192,16 +160,16 @@
     </div>
 
       <div class="next">
-        <a href="#gcarlin">|<</a>
-            <a href="#lxmas">>|</a>
+        <a href="#gcarlin" style="padding-right:10px;">|<</a>
+            <a href="#lxmas" style="padding-left:10px;">>|</a>
         </div> 
 
     <div id="lxmas">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/N_j5tDuakKU" frameborder="0" allowfullscreen></iframe>
     </div>  
             <div class="next">
-                <a href="#moon">|<</a>
-            <a href="#jgaffigan">>|</a>
+            <a href="#moon" style="padding-right:10px;">|<</a>
+            <a href="#jgaffigan" style="padding-left:10px;">>|</a>
             </div> 
 </div> 
 </div>
