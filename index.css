@@ -1,16 +1,16 @@
 body {
   margin: auto;
   padding: auto;
-/*  background-color: #000;*/
+  background-color: #000;
 }
 
-html { 
+/*html { 
   background: url(stage.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 
 .dropdown {
     position: relative;
@@ -36,6 +36,20 @@ html {
     border-radius: 7px;
 }
 
+#skip {
+  margin: 0px !important; 
+  padding: 0 !important;
+  text-align: center;
+  font-size: 14px;
+}
+
+.move {
+  margin: 0px !important; 
+  padding: 0 !important;
+  text-align: center;
+  font-size: 14px;  
+}
+
 #element {
   position:fixed;
   top: 0px;
@@ -58,7 +72,8 @@ html {
 .water {
   width: 100%;
   height: 800px;
-  margin:0 auto;
+  /*margin-top: 100px;*/
+  background-color: #000;
 }
 
 #intro {
@@ -80,7 +95,7 @@ html {
   text-align: center;
   margin-top: 0px;
   padding: 0 auto;
-  padding-top: 15px;
+  /*padding-top: 10px;*/
   background-color: #000;
   width: 100%;
   height:50px;
@@ -99,6 +114,7 @@ html {
   width: 100%;
   height: 675px;
   padding-top:75px;
+  background-color: #000 !important;
 }
 
 #start {
@@ -130,57 +146,129 @@ a:visited {
 }
 
 #bburr {
-  margin-top:1000px;
+  margin-top:700px;
   width: 100%;
   height: 675px;
   padding-top:75px;
+  background-color: #000 !important;
 }
 
 #lneeson {
-  margin-top:1000px;
+  margin-top:700px;
   width: 100%;
   height: 675px;
   padding-top:75px;
+  background-color: #000 !important;  
 }
 
 #bobs {
-  margin-top:1000px;
+  margin-top:700px;
   width: 100%;
   height: 675px;
   padding-top:75px;
+  background-color: #000 !important;  
 }
 
 #louis {
-  margin-top:1000px;
+  margin-top:700px;
   width: 100%;
   height: 675px;
   padding-top:75px;
+  background-color: #000 !important;  
 }
 
-#jrogan {
+/*#jrogan {
   margin-top:1000px;
   width: 100%;
   height: 675px;
   padding-top:75px;
-}
+}*/
 
 #gcarlin {
-  margin-top:1000px;
+  margin-top:700px;
   width: 100%;
   height: 675px;
   padding-top:75px; 
+  background-color: #000 !important;  
 }
 
 #moon {
-  margin-top:1000px;
+  margin-top:700px;
   width: 100%;
   height: 675px;
   padding-bottom: 75px;
+  background-color: #000 !important;  
 }
 
 #lxmas {
-  margin-top:1000px;
+  margin-top:700px;
   width: 100%;
   height: 675px;
   padding-top:75px;
+  background-color: #000 !important;  
+}
+
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
 }
